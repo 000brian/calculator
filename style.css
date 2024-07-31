@@ -1,0 +1,63 @@
+* {
+    font-family: 'Comic Sans MS';
+    font-size:35px;
+    gap:4px;
+}
+button {
+    border-radius: 5px;
+    background-color: white;
+}
+button:active{
+    background-color: darkgrey;
+}
+    
+
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div.calc-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgb(81, 81, 190);
+    border-radius: 5px;
+    padding: 5px;
+}
+div.buttons {
+    display:flex;
+}
+div.numbers {
+    flex: 3 1 0;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.numbers > div {
+    display:flex;
+    align-items: stretch;
+    flex:1;
+}
+div.numbers > div > button {
+    flex: 1;
+}
+div.operations{
+    flex: 1 1 0;
+    display:flex;
+    align-items: stretch;
+    flex-direction: column;
+
+}
+div.display {
+    width: 400px;
+    height: 100px;
+    text-align: right;
+    background-color: rgb(0, 0, 0);
+    color: greenyellow;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 50px;
+}
