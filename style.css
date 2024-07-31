@@ -2,28 +2,32 @@
     font-family: 'Comic Sans MS';
     font-size:35px;
     gap:4px;
+    margin: 0px;
+    padding: 0px;
 }
 button {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
 }
 button:active{
     background-color: darkgrey;
 }
-    
 
-body {
+div.flex-container {
     display:flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(252, 226, 230);
 }
+
 div.calc-container{
     display: flex;
     flex-direction: column;
     width: 400px;
     background-color: rgb(81, 81, 190);
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
 }
 div.buttons {
     display:flex;
@@ -55,9 +59,11 @@ div.display {
     text-align: right;
     background-color: rgb(0, 0, 0);
     color: greenyellow;
-    padding: 20px;
+    padding: 25px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: 50px;
+    border-radius: 10px;
 }

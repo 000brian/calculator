@@ -1,3 +1,8 @@
+const display = document.querySelector("div.display");
+
+const buttonList = document.querySelectorAll("button");
+console.log(buttonList);
+
 function add (a, b)
 {
 	return +a + +b;
@@ -34,6 +39,11 @@ function operate(num1, operator, num2)
 		case "*":
 			return multiply(num1, num2);
 		case "/":
+			if (num2 == 0)
+			{
+				alert("Cannot divide by zero.");
+				return 0;
+			}
 			return divide(num1, num2);
 		default:
 			alert("you called operate with a fucked up operator :-(");
@@ -41,11 +51,7 @@ function operate(num1, operator, num2)
 	}
 }
 
-let displayText = "0";
-const display = document.querySelector("div.display");
 
-const buttonList = document.querySelectorAll("button");
-console.log(buttonList);
 
 let operation = []; // [num1, operation, num2]
 
